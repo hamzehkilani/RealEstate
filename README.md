@@ -1,139 +1,66 @@
-Project Title
-This is a sample project setup with Tailwind CSS, jQuery, Select2, and a clean HTML structure for easy customization and development. It serves as a base for most web development projects.
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-Table of Contents
-Introduction
-Prerequisites
-Installation
-Running the Project
-Folder Structure
-Customization
-License
-Introduction
-This project is a starting point for building web applications using Tailwind CSS for fast and responsive design, jQuery for easy DOM manipulation, and Select2 for enhanced form select elements. It comes with a clean, responsive layout, ready for customizations such as adding new sections, styling changes, and JavaScript functionality.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Prerequisites
-Before getting started, ensure you have the following software installed:
+## About Laravel
 
-Node.js (v14.x or above)
-npm (v6.x or above)
-Git (for version control)
-You can download and install Node.js from https://nodejs.org/.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-Additional Tools
-For building and running this project, you may also need:
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Text Editor: VSCode, Sublime Text, etc.
-Browser: Chrome, Firefox, or any modern browser for viewing the project.
-Installation
-Follow the steps below to get the project up and running:
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Clone the Repository
+## Learning Laravel
 
-Open your terminal and run the following command to clone the repository:
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-bash
-Copy code
-git clone https://github.com/your-username/your-project-name.git
-Navigate to the Project Directory
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-Change to the project directory:
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-bash
-Copy code
-cd your-project-name
-Install Dependencies
+## Laravel Sponsors
 
-This project uses npm for managing dependencies. Run the following command to install all required dependencies:
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-bash
-Copy code
-npm install
-This will install Tailwind CSS, jQuery, Select2, and other dependencies defined in the package.json file.
+### Premium Partners
 
-Install Tailwind CSS (if not included)
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Cubet Techno Labs](https://cubettech.com)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[Many](https://www.many.co.uk)**
+- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+- **[DevSquad](https://devsquad.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[OP.GG](https://op.gg)**
+- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+- **[Lendio](https://lendio.com)**
 
-If you want to install Tailwind CSS manually (in case you don’t have a node_modules folder yet):
+## Contributing
 
-bash
-Copy code
-npm install tailwindcss
-Afterward, initialize Tailwind CSS if not already done:
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-bash
-Copy code
-npx tailwindcss init
-Install jQuery and Select2
+## Code of Conduct
 
-To install jQuery and Select2 using npm:
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-bash
-Copy code
-npm install jquery select2
-Create Tailwind Configuration (Optional)
+## Security Vulnerabilities
 
-You can create a tailwind.config.js file for custom configurations, if needed. This is optional, as the default configuration works out of the box.
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-bash
-Copy code
-npx tailwindcss init
-Running the Project
-Once all dependencies are installed, you can run the project locally for development.
+## License
 
-Run with a Local Development Server
-
-If you have a local development server, you can use Live Server (VSCode extension) or any local server to serve the project.
-
-Alternatively, use npm scripts to start a local server. You can create a script like this in package.json:
-
-json
-Copy code
-"scripts": {
-  "start": "lite-server"
-}
-Then, run the following command:
-
-bash
-Copy code
-npm run start
-Open in Browser
-
-After running the server, open your browser and navigate to http://localhost:3000 (or the appropriate port).
-
-Folder Structure
-Here's the basic folder structure of the project:
-
-csharp
-Copy code
-your-project-name/
-│
-├── assets/                  # Custom assets (CSS, images, fonts)
-│   ├── css/                 # Custom CSS files (styles.css, etc.)
-│   └── js/                  # JavaScript files (main.js, etc.)
-│
-├── node_modules/            # Node.js modules (generated by npm install)
-│
-├── public/                  # Public directory (served by the web server)
-│   └── index.html           # Main HTML file
-│
-├── package.json             # npm package configuration
-├── tailwind.config.js       # Tailwind CSS configuration
-└── README.md                # This README file
-Customization
-Custom CSS:
-
-You can modify the assets/css/styles.css file to add your custom styles.
-Tailwind's utility classes can be used directly in the HTML file, but you can also extend the styles in this file if necessary.
-Adding Sections:
-
-You can add more sections to index.html under the <main> tag, such as a "Portfolio" or "Testimonials" section.
-Tailwind CSS utilities can be used for layout (e.g., grid, flex), padding, margins, and other styles.
-
-
-
-Updating Tailwind:
-
-If you want to change Tailwind's default configuration, modify tailwind.config.js.
-You can add custom themes, breakpoints, or plugins in this file.
-License
-This project is licensed under the MIT License - see the LICENSE file for details
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
