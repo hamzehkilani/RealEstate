@@ -71,4 +71,7 @@ class User extends Authenticatable
     public function userDetails(){
         return $this->hasOne(UserDetails::class);
     }
+    public function customer(){
+        return $this->hasMany(Customer::class);
+    }
 }

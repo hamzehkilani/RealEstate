@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Orders extends Model
 {
     use HasFactory,SoftDeletes;
-    protected $fillable=['user_id',	'purchasing_user_id',	'customer_name',	'customer_phone_number',	'start_price',		'date_accept'	];
+    protected $fillable=['user_id',	'purchasing_user_id',	'customer_id',		'date_accept'	];
     protected $casts = [
         'state'=>StatesEnum::class,
     ];
@@ -21,6 +21,9 @@ class Orders extends Model
 
     public function userPurchasing(){
         return $this->belongsTo(User::class,'purchasing_user_id');
+    }
+    public function customer(){
+        return $this->belongsTo(Customer::class,'customer_id');
     }
 
 }
