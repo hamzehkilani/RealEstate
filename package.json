@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.7.2",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.17",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@simonwep/pickr": "^1.9.1",
+        "alpinejs": "^3.14.7",
+        "aos": "^2.3.4",
+        "chart.js": "^4.4.7",
+        "flowbite": "^2.5.2",
+        "jarallax": "^2.2.1",
+        "jquery": "^3.7.1",
+        "scrollmagic": "^2.0.8",
+        "select2": "^4.1.0-rc.0",
+        "sweetalert2": "^11.15.2",
+        "swiper": "^11.1.15"
+    }
+}
