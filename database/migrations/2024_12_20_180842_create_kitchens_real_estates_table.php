@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\PropitesRealEstates;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -12,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('real_estates', function (Blueprint $table) {
+        Schema::create('kitchens_real_estates', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->foreignIdFor(PropitesRealEstates::class)->constrained()->cascadeOnDelete()->cascadeOnUpdate();
-            $table->softDeletes();
-
+            $table->integer('count')->nullable();
+            $table->boolean('has_addtions')->default(false);
             $table->timestamps();
-
         });
     }
 
@@ -28,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('real_estates');
+        Schema::dropIfExists('kitchens_real_estates');
     }
 };
